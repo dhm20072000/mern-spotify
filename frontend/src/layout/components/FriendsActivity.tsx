@@ -26,6 +26,11 @@ const FriendsActivity = () => {
 
 			<ScrollArea className='flex-1'>
 				<div className='p-4 space-y-4'>
+
+          {users.length === 0 && (
+            <div className="font-bold text-xl text-center text-green-500">No Friends Available</div>
+          )}
+
 					{users.map((user) => {
 						const activity = userActivities.get(user.clerkId);
 						const isPlaying = activity && activity !== "Idle";

@@ -42,7 +42,7 @@ const UsersList = () => {
                 </div>  
               ))
             ) : (
-              <div className="font-bold text-xl text-center text-green-500 ">No User Available</div>
+              <div className="font-bold text-xl text-center text-green-500">No Friends Available</div>
             )}
           </div>
         </ScrollArea>

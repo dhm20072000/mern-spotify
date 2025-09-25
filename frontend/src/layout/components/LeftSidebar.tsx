@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 const LeftSidebar = () => {
   
-  const {songs, albums, fetchAlbums, isLoading } = useMusicStore();
+  const {albums, fetchAlbums, isLoading } = useMusicStore();
 
   useEffect(() => {
     fetchAlbums();
